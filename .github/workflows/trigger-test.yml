@@ -2,6 +2,10 @@ name: Pull Request
 
 on:
     workflow_dispatch:
+        inputs:
+            uat:
+                required: false
+                type: string
 
 jobs:
   trigger-circleci:
