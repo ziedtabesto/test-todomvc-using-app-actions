@@ -64,7 +64,7 @@ jobs:
 
       - name: Trigger CircleCI run
         env:
-          CCI_TOKEN: ${{ secrets.CIRCLE_CI_API_TOKEN }}
+          CIRCLE_CI_API_TOKEN: ${{ secrets.CIRCLE_CI_API_TOKEN }}
           # show parsed parameters when triggering the CircleCI pipeline
           DEBUG: trigger-circleci-pipeline
         run: |
