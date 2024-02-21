@@ -105,6 +105,6 @@ jobs:
           # note that we need to quote the entire parameters string
           # and escape quotes for individual parts that can have spaces in them
           npx trigger-circleci-pipeline@1.9.1 \
-            --org bahmutov --project test-todomvc-using-app-actions \
+            --org ziedtabesto --project test-todomvc-using-app-actions \
             --parameters "MACHINES=${{ github.event.inputs.machines }},RECORDED_RUN_TAG=\"${RUN_TAG}\",GREP_TAGS=\"${TAGS}\"" \
             --branch $GITHUB_REF_NAME
