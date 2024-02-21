@@ -1,12 +1,6 @@
 name: Pull Request
 
-on:
-    workflow_dispatch:
-        inputs:
-            uat:
-                required: false
-                type: string
-
+on: [workflow_dispatch]
 jobs:
   trigger-circleci:
     runs-on: ubuntu-latest
